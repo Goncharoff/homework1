@@ -75,8 +75,8 @@ public class Homework1Tests {
   //Test for utils methods which not are in subject of homework but used for it.
   @Test
   void printingTest() {
-    assertEquals("10 -> 2", buildOutputStringForFirstSubject(givenFirstBinaryAsString, 2));
-    assertEquals("01010100101001 -> 5417", buildOutputStringForFirstSubject(givenSecondBinaryAsString, 5417));
+    assertEquals("10 -> 2", buildOutput(givenFirstBinaryAsString, 2));
+    assertEquals("01010100101001 -> 5417", buildOutput(givenSecondBinaryAsString, 5417));
   }
 
   @Test

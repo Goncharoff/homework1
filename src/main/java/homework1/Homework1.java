@@ -3,6 +3,7 @@ package homework1;
 
 import static homework1.Homework1Utils.*;
 
+import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class Homework1 {
@@ -10,25 +11,12 @@ public class Homework1 {
   private static final char MINUS_SYMBOL = '-';
 
   public static void main(String[] args) {
-    //Scanner scanner = new Scanner(System.in);
-    //String inputBinaryNumber = scanner.next();
-    //printFirstSubject(inputBinaryNumber, binaryToIntFirstFirstVersion(inputBinaryNumber));
-    //printFirstSubject(inputBinaryNumber, binaryToIntSecondVersion(inputBinaryNumber));
-    //System.out.println(changeNumberSign(-3));
-    //System.out.println(gcd(10, 5));
-    //System.out.println(binaryGcd(15, 5));
-    //System.out.println(gcd(15, -5));
-    //System.out.println(changeBitAtPosition(2, 7, 0));
-    byte qwe = 12;
-    short qwe1 = 12;
-    int qwe2 = 12;
-    long qwe3 = 12;
-
-    System.out.println(countBits(qwe));
-    System.out.println(countBits(qwe1));
-    System.out.println(countBits(qwe2));
-    System.out.println(countBits(qwe3));
-    System.out.println(changeNumberSign(-122));
+    Scanner scanner = new Scanner(System.in);
+    String inputBinaryNumber = scanner.next();
+    String firstTest = buildOutput(inputBinaryNumber, binaryToIntFirstFirstVersion(inputBinaryNumber));
+    String secondTest = buildOutput(inputBinaryNumber, binaryToIntSecondVersion(inputBinaryNumber));
+    System.out.println(firstTest);
+    System.out.println(secondTest);
   }
 
 

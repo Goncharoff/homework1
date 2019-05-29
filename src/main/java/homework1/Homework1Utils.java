@@ -9,7 +9,7 @@ public class Homework1Utils {
    * @param outputDecimal     - output.
    * @return result as inputBinaryString -> outputDecimal.
    */
-  public static String buildOutputStringForFirstSubject(String inputBinaryString, int outputDecimal) {
+  public static String buildOutput(String inputBinaryString, int outputDecimal) {
     return inputBinaryString + " -> " + outputDecimal;
   }
 
