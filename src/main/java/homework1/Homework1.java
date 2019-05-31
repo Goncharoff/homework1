@@ -21,7 +21,7 @@ public class Homework1 {
 
 
   /**
-   * Proxy method for turning binary number to decimal.
+   * Proxy method for turning binary number to decimal.  TASK - 1
    *
    * @param inputBinaryString - binary number in String format.
    * @return Decimal number as int.
@@ -32,7 +32,7 @@ public class Homework1 {
   }
 
   /**
-   * Method for turning binary number to decimal.
+   * Method for turning binary number to decimal.  TASK - 1
    * If first character of input string is '-' - returns negative decimal number.
    *
    * @param inputBinaryString binary number as String.
@@ -50,7 +50,7 @@ public class Homework1 {
     return isNegative ? changeNumberSign(result) : result;
   }
 
-  /**
+  /** TASK - 4
    * Euclidean algorithm  for finding greatest common divisor using bitwise
    * operators instead of division. Returns 0 if {@code firstNumber == 0 && secondNumber == 0}
    * If one of params equals 0 returns second one.
@@ -73,7 +73,7 @@ public class Homework1 {
     return gcd(firstNumber, binarySubtraction(secondNumber, firstNumber));
   }
 
-  /**
+  /** TASK - 4
    * Stein algorithm for finding greatest common divisor.
    * Returns 0 if {@code firstNumber == 0 && secondNumber == 0}
    * If one of params equals 0 returns second one.
@@ -108,7 +108,7 @@ public class Homework1 {
 
   }
 
-  /**
+  /** TASK - 2
    * Change sign of decimal int number using bitwise operator.
    *
    * @param inputNumber - decimal int number.
@@ -118,7 +118,7 @@ public class Homework1 {
     return add(~inputNumber, 1);
   }
 
-  /**
+  /** TASK - 5
    * Change bit at certain position in decimal number and
    * returns new values. Position counting starts from 0.
    *
@@ -134,7 +134,8 @@ public class Homework1 {
     return (number & ~tmp) | ((bitValue << position) & tmp);
   }
 
-  /**
+  /** wrong task :<
+   *
    * Method counts number of bits in binary representation of number
    * using bitwise operators. There is more efficient algorithm  "Hamming weight"
    *

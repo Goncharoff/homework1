@@ -1,6 +1,7 @@
 import static homework1.Homework1.*;
 import static homework1.Homework1.countBits;
 import static homework1.Homework1Utils.*;
+import static homework1.NumberOfBytes.sizeOfClass;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Assertions;
@@ -100,5 +101,18 @@ public class Homework1Tests {
 
     Assertions.assertThrows(IllegalArgumentException.class, () -> changeBitAtPosition(12, 13, testByteNumber));
     Assertions.assertThrows(IllegalArgumentException.class, () -> changeBitAtPosition(12, 13, secondTestByteNumber));
+  }
+
+  @Test
+  void testComputingNumberOfBItsForClasses() {
+    assertEquals(sizeOfClass(byte.class), 1);
+    assertEquals(sizeOfClass(short.class), 2);
+    assertEquals(sizeOfClass(int.class), 4);
+    assertEquals(sizeOfClass(long.class), 8);
+  }
+
+  @Test
+  void sizeOfClassShouldTThrowNPE() {
+    Assertions.assertThrows(NullPointerException.class, () -> sizeOfClass(null));
   }
 }

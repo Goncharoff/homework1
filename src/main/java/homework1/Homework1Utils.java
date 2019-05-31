@@ -52,4 +52,21 @@ public class Homework1Utils {
     return firstAddend;
   }
 
+  /**
+   * Division by eight using bitwise operators.
+   *
+   * @param dividend - dividend number
+   * @return number, which was divided by eight as int
+   */
+  static int divideByEight(int dividend) {
+    int divisor = Byte.SIZE;
+    int quotient = 0;
+
+    while (dividend >= divisor) {
+      dividend = binarySubtraction(dividend, divisor);
+      quotient = add(quotient, 1);
+    }
+
+    return quotient;
+  }
 }
