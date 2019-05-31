@@ -24,8 +24,8 @@ public class NumberOfBytes {
    * @return - number of bytes for class, or 0 if class is incorrect;
    */
   public static int sizeOfClass(Class dataType) {
-    int result = 0; // default for 32-bit memory pointer
-
+    int result = 0; 
+    
     if (dataType == null) throw new NullPointerException();
 
     if (dataType == byte.class || dataType == Byte.class) result = divideByEight(Byte.SIZE);
